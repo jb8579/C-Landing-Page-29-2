@@ -225,7 +225,7 @@ a.get-bonus-btn:hover {
         position: relative;
         top: 11px;
     }
-    .Home_img.pro-sm-logo > a > img {
+    .HomeFlex.pro-sm-logo {
         display: none;
     }
     header.header-area.sm-part-none {
