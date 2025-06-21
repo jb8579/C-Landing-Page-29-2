@@ -35,10 +35,10 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 35px;
+    grid-column-gap: 25px;
     align-items: center;
     justify-content: space-around;
-    grid-row-gap: 35px;
+    grid-row-gap: 15px;
 }
   
 .bhtnoskj-box {
@@ -58,6 +58,7 @@
     height: 100%;
     z-index: 9;
     top: 0;
+    border-radius: 10px;
 }
 
 .innterpromo {
@@ -65,7 +66,7 @@
     z-index: 999;
     padding: 30px;
     width: 100%;
-    bottom: -18px;
+    bottom: -45px;
 }
 
 .bhtnoskj-wrapper a{
@@ -87,10 +88,12 @@
 }
 .innterpromo h2 {
     color: #ffffff;
-    font-family: "Exo 2";
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    margin: 0px;
 }
 .bhtnoskj-box.bhtnoskj-box-5 {
     height: 348px;
@@ -111,7 +114,7 @@
 }
 
 a.get-bonus-btn {
-    color: #000;
+    color: #ffffff;
     font-size: 19px;
     font-weight: 600;
     line-height: 48px;
@@ -123,18 +126,57 @@ a.get-bonus-btn {
     transition: 0.3s all ease;
     position: relative;
     border-radius: 9px;
-    background: #FFD50A;
+    background: linear-gradient(140deg, #000000, #000000);
     margin-top: 20px;
+    border-radius: 100pc;
+    border: 1px dashed #ffffffb0;
 }
 
+a.get-bonus-btn.get-bonus-btn-1{
+    background: linear-gradient(140deg, #23becb, #0a585a);
+    box-shadow: 0px 1px 3px 2px #054d4c;
+}
 
+a.get-bonus-btn.get-bonus-btn-2 {
+    background: linear-gradient(74deg, #660537, #f93497);
+    box-shadow: 0px 1px 3px 2px #c11553;
+}
+a.get-bonus-btn.get-bonus-btn-3 {
+    background: linear-gradient(178deg, #b31010, #ff2423);
+    box-shadow: 0px 1px 3px 2px #ef3636;
+}
+a.get-bonus-btn.get-bonus-btn-4 {
+    background: linear-gradient(355deg, #1b5205, #63df12);
+    box-shadow: 0px 1px 3px 2px #1aa707;
+}
+a.get-bonus-btn.get-bonus-btn-5 {
+    background: linear-gradient(257deg, #498cca, #152d93);
+    box-shadow: 0px 1px 3px 2px #0c6cbb;
+}
 
 a.get-bonus-btn:hover {
-    color: #000;
-    background: #dab604;
+    background: linear-gradient(4deg, #FDEB9A 26.13%, #AE7D25 91%);
     letter-spacing: 0.6px;
+    border: 0px;
 }
-
+a.get-bonus-btn.get-bonus-btn-1:hover{
+    color: #0a585a;
+}
+a.get-bonus-btn.get-bonus-btn-2:hover{
+    color: #660537;
+}
+a.get-bonus-btn.get-bonus-btn-3:hover{
+    color: #b31010;
+}
+a.get-bonus-btn.get-bonus-btn-4:hover {
+    color: #188309;
+}
+a.get-bonus-btn.get-bonus-btn-5:hover{
+    color: #152d93;
+}
+img.heroteamimg {
+    border-radius: 10px;
+}
 .bhtnoskj-wrapper {
     height: 315px;
 }  
@@ -144,7 +186,7 @@ a.get-bonus-btn:hover {
     width: 100%;
     position: relative;
     box-sizing: border-box;
-    margin-top: 40px;
+    margin-top: 20px;
 }
   
 .heroteamimg {
@@ -210,7 +252,7 @@ a.get-bonus-btn:hover {
     z-index: 999;
 }
 .bhtnoskj-button-area a{
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 @media screen and (max-width: 868px) and (min-width: 767px){
     header.header-area.sm-part-none {
@@ -255,7 +297,7 @@ a.get-bonus-btn:hover {
         display: block;
         gap: 0px;
     }
-    .bhtnoskj-box.bhtnoskj-box-1 {
+    /* .bhtnoskj-box.bhtnoskj-box-1 {
         border: 1px solid transparent;
         border-image: linear-gradient(to right, #ffd50a, #935d13);
         border-image-slice: 1;
@@ -266,12 +308,7 @@ a.get-bonus-btn:hover {
         border: 1px solid transparent;
         border-image: linear-gradient(to right, #925d13c7, #935d13c7);
         border-image-slice: 1;
-    }
-    .bhtnoskj-box:hover{
-        border: 1px solid transparent;
-        border-image: linear-gradient(to right, #ffd50a, #935d13);
-        border-image-slice: 1;
-    }
+    } */
     .badge img {
         width: 40px;
         top: -16px;
@@ -290,9 +327,18 @@ a.get-bonus-btn:hover {
     .bhtnoskj-button-area {
         margin: 0px 15px;
     }
+    .bhtnoskj-button-area {
+        bottom: 90px;
+    }
     .heroteamimg {
         display: none;
     }
+    img.promoimg-sm-d-1{
+        display: none;
+    }
+    img.heroteamimg2 {
+    border-radius: 10px;
+}
     .heroteamimg2 {
         display: block;
         object-fit: unset;
@@ -414,7 +460,7 @@ a.get-bonus-btn:hover {
 }
 @media screen and (max-width: 600px) and (min-width: 380px){
     .innterpromo h2 {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 28px;
     }
     .innterpromo p {
@@ -432,7 +478,10 @@ a.get-bonus-btn:hover {
     }
     .innterpromo {
         padding: 15px 15px;
-        bottom: -20px;
+        bottom: -46px;
+    }
+    .bhtnoskj-button-area {
+        bottom: 105px;
     }
 }
 @media screen and (max-width: 390px) and (min-width: 300px){
@@ -461,11 +510,11 @@ a.get-bonus-btn:hover {
         z-index: 999;
         padding: 30px;
         width: 100%;
-        bottom: 4px;
+        bottom: -18px;
     }
 
     .bhtnoskj-button-area {
-        bottom: 80px;
+        bottom: 70px;
     }
     .innterpromo {
         padding: 30px 15px;
@@ -485,7 +534,7 @@ a.get-bonus-btn:hover {
         margin-top: -127px;
     }
     .bhtnoskj-wrapper {
-        height: 225px;
+        height: 220px;
     }
     .Home_img>a>img {
         max-width: 100%;
@@ -493,13 +542,56 @@ a.get-bonus-btn:hover {
         display: block;
     }
 }
-.innterpromo> h2 > span {
-    color: #FFD50A;
+.innterpromo h2 > span {
+    background: linear-gradient(4deg, #FDEB9A 26.13%, #AE7D25 91%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }
-
+/* .innterpromo.innterpromo2> h2 > span {
+    color: #ff3394;
+    font-weight: 700;
+    text-shadow: 2px 3px 5px #770340;
+}
+.innterpromo.innterpromo3> h2 > span {
+    color: #ff2d2e;
+    font-weight: 700;
+    text-shadow: 2px 3px 5px #810c0c;
+}
+.innterpromo.innterpromo4> h2 > span {
+    color: #54df0c;
+    font-weight: 700;
+    text-shadow: 1px 3px 5px #268b04ee;
+}
+.innerheroteam.innterpromo.innterbhtnoskj-5 h2 > span {
+    color: #17baed;
+    font-weight: 700;
+    text-shadow: 1px 3px 5px #0e5fc3ee;
+} */
 @media screen and (max-width: 600px) and (min-width: 391px){
     .innerheroteam.innterpromo.innterbhtnoskj-5 > p {
         position: relative;
         top: -11px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    img.promoimg-sm-block-1.promoimg{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .bhtnoskj-box{
+        height: 225px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .bhtnoskj-box{
+        height: 205px;
     }
 }
